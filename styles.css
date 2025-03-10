@@ -25,6 +25,7 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   line-height: 1.5;
+  padding: 30px;
 }
 
 /* Typography */
@@ -41,6 +42,7 @@ h5,
 h6 {
   margin-bottom: 0.5rem;
   line-height: 1.2;
+  Color: #ffd700;
 }
 
 /* Layout */
