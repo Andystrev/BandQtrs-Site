@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandqtrs - Let's Make Music</title>
+    <style>
+        body {
+            background-color: black;
+            color: #FFD700;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1000x300_logo.png" alt="Bandqtrs Logo" class="logo">
+        <h1>Let's Make Music</h1>
+        <p>Bandqtrs is the ultimate collaboration platform for musicians. Whether you're in a band or working on solo projects, our app helps you connect, share, and create music together.</p>
+        
+        <h2>Features:</h2>
+        <ul>
+            <li>Send invites to musicians and form bands</li>
+            <li>Create songs and share ideas</li>
+            <li>Upload and collaborate on song files</li>
+            <li>Plan rehearsals, gigs, and music events</li>
+        </ul>
+        
+        <div class="cta">
+            <a href="https://apps.apple.com">Download on the App Store</a>
+            <a href="https://play.google.com/store">Get it on Google Play</a>
+        </div>
+        
+        <h2>Legal Information</h2>
+        <p><a href="#terms">Terms & Conditions</a> | <a href="#privacy">Privacy Policy</a> | <a href="#cookies">Cookies Policy</a></p>
+        
+        <hr>
+        
+        <h2 id="terms">Terms and Conditions</h2>
+        <p>Effective Date: [Insert Date]</p>
+        <p>Welcome to Bandqtrs, an application owned and operated by ScenCan ("Company," "we," "us," or "our"). These Terms and Conditions govern your use of the Bandqtrs mobile application and website.</p>
+        <p>You must be at least 13 years old to use Bandqtrs. If under 18, parental permission is required. You retain ownership of content but grant Bandqtrs a license to use, store, and display it for service purposes.</p>
+        <p>For full details, please read our <a href="#terms">Terms & Conditions</a>.</p>
+        
+        <h2 id="privacy">Privacy Policy</h2>
+        <p>Effective Date: [Insert Date]</p>
+        <p>ScenCan is committed to protecting your privacy. We collect data such as account details, usage statistics, and content uploads to improve the Bandqtrs experience.</p>
+        <p>We comply with GDPR (EU/UK) and US privacy laws. You have the right to access, modify, or delete your personal data.</p>
+        <p>For full details, please read our <a href="#privacy">Privacy Policy</a>.</p>
+        
+        <h2 id="cookies">Cookies Policy</h2>
+        <p>Effective Date: [Insert Date]</p>
+        <p>This Cookies Policy explains how Bandqtrs uses cookies and similar tracking technologies to improve functionality and user experience.</p>
+        <p>We use essential, performance, and analytics cookies. You can manage your cookie preferences via your browser settings.</p>
+        <p>For full details, please read our <a href="#cookies">Cookies Policy</a>.</p>
+    </div>
+</body>
+</html>
