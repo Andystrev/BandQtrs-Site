@@ -1,0 +1,31 @@
+import type React from "react"
+import "./globals.css"
+import type { Metadata } from "next"
+import { Inter, Special_Elite } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
+const specialElite = Special_Elite({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-special-elite",
+})
+
+export const metadata: Metadata = {
+  title: "BandQtrs - Your Band's Headquarters",
+  description:
+    "The ultimate app for musicians who collaborate. Manage your band, songs, practices, and gigs all in one place.",
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={`${inter.className} ${specialElite.variable}`}>{children}</body>
+    </html>
+  )
+}
+
