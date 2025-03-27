@@ -25,7 +25,6 @@ body {
   background-color: var(--color-black);
   color: var(--color-white);
   line-height: 1.5;
-  padding: 30px;
 }
 
 /* Typography */
@@ -42,7 +41,6 @@ h5,
 h6 {
   margin-bottom: 0.5rem;
   line-height: 1.2;
-  Color: #ffd700;
 }
 
 /* Layout */
@@ -413,6 +411,14 @@ h6 {
   width: 3rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -595,6 +601,10 @@ h6 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
   }
@@ -624,5 +634,29 @@ h6 {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+/* Rounded full for the numbered steps */
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Flex utilities for the numbered steps */
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Border utilities */
+.border-t {
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
