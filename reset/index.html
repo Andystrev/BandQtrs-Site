@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <title>Redirecting to Bandqtrs App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
     <script>
       const params = new URLSearchParams(window.location.search);
       const type = params.get("type");
@@ -12,13 +11,14 @@
 
       if (type === "recovery" && accessToken && refreshToken) {
         const deepLink = `bandqtrs://reset-password?access_token=${accessToken}&refresh_token=${refreshToken}`;
-        window.location.href = deepLink;
+        window.location.replace(deepLink);
       } else {
-        document.body.innerHTML = "<h3>Invalid or missing recovery token.</h3>";
+        // Optional: fallback to homepage or show error message
+        window.location.replace("https://bandqtrs.com/#error=invalid_link");
       }
     </script>
   </head>
   <body>
-    <p>Redirecting to the Bandqtrs app...</p>
+    <p>Redirecting you to the Bandqtrs app...</p>
   </body>
 </html>
