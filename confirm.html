@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Confirming your account…</title>
+    <meta charset="utf-8" />
+    <script>
+      // Wait for DOM, then parse the token
+      window.onload = () => {
+        const params = new URLSearchParams(window.location.search);
+        const type = params.get("type");
+        const access_token = params.get("access_token");
+        const refresh_token = params.get("refresh_token");
+
+        if (type === "signup" && access_token && refresh_token) {
+          const deepLink = `bandqtrs://confirm?access_token=${access_token}&refresh_token=${refresh_token}`;
+          window.location.href = deepLink;
+        } else {
+          document.body.innerHTML = "<h2>Invalid or expired confirmation link.</h2>";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to the Bandqtrs app...</p>
+  </body>
+</html>
