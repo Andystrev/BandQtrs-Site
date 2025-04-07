@@ -5,12 +5,14 @@
     <meta charset="utf-8" />
     <script>
       window.onload = () => {
-        const params = new URLSearchParams(window.location.search);
-        const access_token = params.get("access_token");
-        const refresh_token = params.get("refresh_token");
+        const hashParams = new URLSearchParams(window.location.hash.slice(1)); // Remove the "#"
+        const access_token = hashParams.get("access_token");
+        const refresh_token = hashParams.get("refresh_token");
+        const type = hashParams.get("type");
 
-        if (access_token && refresh_token) {
-          window.location.href = `bandqtrs://reset?access_token=${access_token}&refresh_token=${refresh_token}`;
+        if (type === "recovery" && access_token && refresh_token) {
+          const deeplink = `bandqtrs://reset?access_token=${access_token}&refresh_token=${refresh_token}`;
+          window.location.href = deeplink;
         } else {
           document.body.innerHTML = "<h2>Invalid or expired reset link.</h2>";
         }
@@ -18,6 +20,6 @@
     </script>
   </head>
   <body>
-    <p>Redirecting to the Bandqtrs app...</p>
+    <p>Redirecting to Bandqtrs app…</p>
   </body>
 </html>
